@@ -23,15 +23,14 @@ label start:
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
-    sound "doopbedoop.mp3" 
+
 
     show dad_sprite at left
 
     # These display lines of dialogue.
 
-
-
     d "Hey kiddo, I got you this new game."
+    play music "sounds/doopbedoop.mp3"
     show girlsprite at right
     e "Oh cool! Never heard of this one before."
     show dad_sprite at left
@@ -353,13 +352,13 @@ label choice3_done:
         b"OH COOL! A BUNNY GAME! Thanks Mom!"
         m"Go ahead and put it in, dear."
         "What would you like to do with Emily?"
-        menu:
+        #menu:
 
-                "Wash Emily":
-                    jump choice2_emily1
+        #        "Wash Emily":
+        #            jump choice2_emily1
 
-                "Play with Emily":
-                    jump choice2_emily2
+        #        "Play with Emily":
+        #            jump choice2_emily2
 
 
 
