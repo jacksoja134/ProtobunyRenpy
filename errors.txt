@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 366: expected ':' not found.
-    label choice2_emily1_done
-                             ^
+File "game/script.rpy", line 392: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
+    $ renpy.full_restart()
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed May  6 17:08:50 2020
+Wed May  6 17:18:52 2020

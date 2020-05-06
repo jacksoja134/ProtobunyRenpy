@@ -204,8 +204,9 @@ label choice3_yes:
                 scene bgblue2
                 "You have Beat the game and set Mr. Fiskers free."
                 f "Thank you, Emily. I love you"
-                jump choice2_playdone
 
+                jump choice2_playdone
+                scene title_text
         label choice2_keep:
                 play music "sounds/doopbedoop.mp3"
                 $ menu_flag = False
@@ -213,7 +214,7 @@ label choice3_yes:
                 e "But now we can play forever, and ever and ever..."
 
                 jump choice2_playdone
-
+                scene title_text
         label choice2_keepdone:
 
 label choice3a_no:
@@ -356,23 +357,41 @@ label choice3_done:
         "What would you like to do with Emily?"
         menu:
 
-                "Wash Emily":
-                    jump choice2_emily1
-                    $ menu_flag = True
-                "Play with Emily":
-                    jump choice2_emily2
-                    $ menu_flag = False
-                    jump choice2_emily1done
-                    label choice2_emily1_done:
-                    scene title_text
+            "Wash Emily":
+                jump choice1_emily1
 
-                    jump choice2_emily2done
+            "Play with Emily":
+                jump choice1_emily2
+
+        label choice1_emily1:
+
+            $ menu_flag = True
+            show title_text
+            "GAME OVER"
+
+            jump choice1_done
 
 
-                    scene title_text
 
-                    return
-                    $ renpy.full_restart()
+        label choice1_emily2:
+
+            $ menu_flag = False
+            scene title_text
+            "GAME OVER"
+
+            jump choice1_done
+
+        label choice1_emilydone:
+
+            ##### ... the game continues here.
+
+            show title_screen
+            show sadbunny:
+                xalign 1.0
+                yalign 0.5
+
+
+
 
 
 
