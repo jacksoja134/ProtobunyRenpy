@@ -1,0 +1,555 @@
+Wed May  6 09:46:32 2020
+Darwin-17.7.0-x86_64-i386-64bit
+Ren'Py 7.3.5.606
+ 
+
+Bootstrap to the start of init.init took 0.13s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.07s
+Loading script took 0.38s
+Loading save slot metadata. took 0.11s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+
+Full traceback:
+  File "game/gui copy/game/guisupport.rpy", line 6, in script
+    init 100 python in gui:
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/gui copy/game/guisupport.rpy", line 27, in <module>
+    generate_gui(p)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/launcher/game/gui7/__init__.py", line 35, in generate_gui
+    CodeGenerator(p).generate_code("options.rpy")
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/launcher/game/gui7/code.py", line 421, in generate_code
+    self.load_template(fn)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/launcher/game/gui7/code.py", line 124, in load_template
+    with codecs.open(template, "r", "utf-8") as f:
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/codecs.py", line 884, in open
+IOError: [Errno 2] No such file or directory: u'/Users/loryjackson-alcaro/Desktop/renpyproject/ProtoBunny/game/options.rpy'
+
+While running game code:
+  File "game/gui copy/game/guisupport.rpy", line 6, in script
+    init 100 python in gui:
+  File "game/gui copy/game/guisupport.rpy", line 27, in <module>
+    generate_gui(p)
+IOError: [Errno 2] No such file or directory: u'/Users/loryjackson-alcaro/Desktop/renpyproject/ProtoBunny/game/options.rpy'
+DPI scale factor: 1.000000
+Interface start took 8.90s
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(800, 450) drawable=(800, 450)
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'ATI Radeon HD 4670 OpenGL Engine'
+Version: '2.1 ATI-10.4.14'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_imaging
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_shadow_ambient
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_blend_equation_separate
+    GL_ATI_blend_weighted_minmax
+    GL_ATI_separate_stencil
+    GL_ATI_texture_compression_3dc
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_bindable_uniform
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_mirror_clamp
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+    GL_SGI_color_matrix
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 8192
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 10.4311769009s
+Resetting cache.
+Bootstrap to the start of init.init took 18.74s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.09s
+Loading script took 0.32s
+Loading save slot metadata. took 0.25s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+
+Full traceback:
+  File "game/gui copy/game/guisupport.rpy", line 6, in script
+    init 100 python in gui:
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/gui copy/game/guisupport.rpy", line 27, in <module>
+    generate_gui(p)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/launcher/game/gui7/__init__.py", line 35, in generate_gui
+    CodeGenerator(p).generate_code("options.rpy")
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/launcher/game/gui7/code.py", line 421, in generate_code
+    self.load_template(fn)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/launcher/game/gui7/code.py", line 124, in load_template
+    with codecs.open(template, "r", "utf-8") as f:
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/codecs.py", line 884, in open
+IOError: [Errno 2] No such file or directory: u'/Users/loryjackson-alcaro/Desktop/renpyproject/ProtoBunny/game/options.rpy'
+
+While running game code:
+  File "game/gui copy/game/guisupport.rpy", line 6, in script
+    init 100 python in gui:
+  File "game/gui copy/game/guisupport.rpy", line 27, in <module>
+    generate_gui(p)
+IOError: [Errno 2] No such file or directory: u'/Users/loryjackson-alcaro/Desktop/renpyproject/ProtoBunny/game/options.rpy'
+DPI scale factor: 1.000000
+Interface start took 4.98s
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(800, 450) drawable=(800, 450)
+Vendor: 'ATI Technologies Inc.'
+ReThe window was restored.
+
+Full traceback:
+  File "game/script.rpy", line 57, in script
+    menu:
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/ast.py", line 1628, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/exports.py", line 990, in menu
+    rv = renpy.store.menu(new_items)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/exports.py", line 1226, in display_menu
+    rv = renpy.ui.interact(mouse='menu', type=type, roll_forward=roll_forward)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/display/core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/display/core.py", line 3386, in interact_core
+    self.quit_event()
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/display/core.py", line 2418, in quit_event
+    renpy.display.behavior.run(renpy.config.quit_action)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/display/behavior.py", line 320, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_menu.rpy", line 205, in __call__
+    layout.yesno_screen(layout.QUIT, Quit(False))
+  File "renpy/common/00layout.rpy", line 527, in yesno_screen
+    if renpy.invoke_in_new_context(layout.invoke_yesno_prompt, None, message):
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/game.py", line 281, in invoke_in_new_context
+    return callable(*args, **kwargs)
+  File "renpy/common/00layout.rpy", line 472, in invoke_yesno_prompt
+    rv = layout.yesno_prompt(*args)
+AttributeError: 'Layout' object has no attribute 'yesno_prompt'
+
+While running game code:
+  File "game/script.rpy", line 57, in script
+    menu:
+  File "renpy/common/00action_menu.rpy", line 205, in __call__
+    layout.yesno_screen(layout.QUIT, Quit(False))
+  File "renpy/common/00layout.rpy", line 527, in yesno_screen
+    if renpy.invoke_in_new_context(layout.invoke_yesno_prompt, None, message):
+  File "renpy/common/00layout.rpy", line 472, in invoke_yesno_prompt
+    rv = layout.yesno_prompt(*args)
+AttributeError: 'Layout' object has no attribute 'yesno_prompt'
+rate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_mirror_clamp
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+    GL_SGI_color_matrix
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 8192
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 24.8622939587s
+Resetting cache.
+Bootstrap to the start of init.init took 25.15s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.10s
+Loading script took 0.42s
+Loading save slot metadata. took 0.10s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+
+Full traceback:
+  File "game/gui copy/game/guisupport.rpy", line 6, in script
+    init 100 python in gui:
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/renpy/python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/gui copy/game/guisupport.rpy", line 27, in <module>
+    generate_gui(p)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/launcher/game/gui7/__init__.py", line 35, in generate_gui
+    CodeGenerator(p).generate_code("options.rpy")
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/launcher/game/gui7/code.py", line 421, in generate_code
+    self.load_template(fn)
+  File "/Users/loryjackson-alcaro/Desktop/ProtobunnyRENPY/launcher/game/gui7/code.py", line 124, in load_template
+    with codecs.open(template, "r", "utf-8") as f:
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/codecs.py", line 884, in open
+IOError: [Errno 2] No such file or directory: u'/Users/loryjackson-alcaro/Desktop/renpyproject/ProtoBunny/game/options.rpy'
+
+While running game code:
+  File "game/gui copy/game/guisupport.rpy", line 6, in script
+    init 100 python in gui:
+  File "game/gui copy/game/guisupport.rpy", line 27, in <module>
+    generate_gui(p)
+IOError: [Errno 2] No such file or directory: u'/Users/loryjackson-alcaro/Desktop/renpyproject/ProtoBunny/game/options.rpy'
+DPI scale factor: 1.000000
+Interface start took 4.79s
+
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(800, 450) drawable=(800, 450)
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'ATI Radeon HD 4670 OpenGL Engine'
+Version: '2.1 ATI-10.4.14'
+Display Info: None
+Extensions:
+    
+    GL_APPLE_aux_depth_stencil
+    GL_APPLE_client_storage
+    GL_APPLE_element_array
+    GL_APPLE_fence
+    GL_APPLE_float_pixels
+    GL_APPLE_flush_buffer_range
+    GL_APPLE_flush_render
+    GL_APPLE_object_purgeable
+    GL_APPLE_packed_pixels
+    GL_APPLE_pixel_buffer
+    GL_APPLE_rgb_422
+    GL_APPLE_row_bytes
+    GL_APPLE_specular_vector
+    GL_APPLE_texture_range
+    GL_APPLE_transform_hint
+    GL_APPLE_vertex_array_object
+    GL_APPLE_vertex_array_range
+    GL_APPLE_vertex_point_size
+    GL_APPLE_vertex_program_evaluators
+    GL_APPLE_ycbcr_422
+    GL_ARB_color_buffer_float
+    GL_ARB_depth_buffer_float
+    GL_ARB_depth_clamp
+    GL_ARB_depth_texture
+    GL_ARB_draw_buffers
+    GL_ARB_draw_elements_base_vertex
+    GL_ARB_draw_instanced
+    GL_ARB_fragment_program
+    GL_ARB_fragment_program_shadow
+    GL_ARB_fragment_shader
+    GL_ARB_framebuffer_object
+    GL_ARB_framebuffer_sRGB
+    GL_ARB_half_float_pixel
+    GL_ARB_half_float_vertex
+    GL_ARB_imaging
+    GL_ARB_instanced_arrays
+    GL_ARB_multisample
+    GL_ARB_multitexture
+    GL_ARB_occlusion_query
+    GL_ARB_pixel_buffer_object
+    GL_ARB_point_parameters
+    GL_ARB_point_sprite
+    GL_ARB_provoking_vertex
+    GL_ARB_seamless_cube_map
+    GL_ARB_shader_objects
+    GL_ARB_shader_texture_lod
+    GL_ARB_shading_language_100
+    GL_ARB_shadow
+    GL_ARB_shadow_ambient
+    GL_ARB_sync
+    GL_ARB_texture_border_clamp
+    GL_ARB_texture_compression
+    GL_ARB_texture_compression_rgtc
+    GL_ARB_texture_cube_map
+    GL_ARB_texture_env_add
+    GL_ARB_texture_env_combine
+    GL_ARB_texture_env_crossbar
+    GL_ARB_texture_env_dot3
+    GL_ARB_texture_float
+    GL_ARB_texture_mirrored_repeat
+    GL_ARB_texture_non_power_of_two
+    GL_ARB_texture_rectangle
+    GL_ARB_texture_rg
+    GL_ARB_transpose_matrix
+    GL_ARB_vertex_array_bgra
+    GL_ARB_vertex_blend
+    GL_ARB_vertex_buffer_object
+    GL_ARB_vertex_program
+    GL_ARB_vertex_shader
+    GL_ARB_window_pos
+    GL_ATI_blend_equation_separate
+    GL_ATI_blend_weighted_minmax
+    GL_ATI_separate_stencil
+    GL_ATI_texture_compression_3dc
+    GL_ATI_texture_env_combine3
+    GL_ATI_texture_float
+    GL_ATI_texture_mirror_once
+    GL_EXT_abgr
+    GL_EXT_bgra
+    GL_EXT_bindable_uniform
+    GL_EXT_blend_color
+    GL_EXT_blend_equation_separate
+    GL_EXT_blend_func_separate
+    GL_EXT_blend_minmax
+    GL_EXT_blend_subtract
+    GL_EXT_clip_volume_hint
+    GL_EXT_debug_label
+    GL_EXT_debug_marker
+    GL_EXT_draw_buffers2
+    GL_EXT_draw_range_elements
+    GL_EXT_fog_coord
+    GL_EXT_framebuffer_blit
+    GL_EXT_framebuffer_multisample
+    GL_EXT_framebuffer_object
+    GL_EXT_framebuffer_sRGB
+    GL_EXT_geometry_shader4
+    GL_EXT_gpu_program_parameters
+    GL_EXT_gpu_shader4
+    GL_EXT_multi_draw_arrays
+    GL_EXT_packed_depth_stencil
+    GL_EXT_packed_float
+    GL_EXT_provoking_vertex
+    GL_EXT_rescale_normal
+    GL_EXT_secondary_color
+    GL_EXT_separate_specular_color
+    GL_EXT_shadow_funcs
+    GL_EXT_stencil_two_side
+    GL_EXT_stencil_wrap
+    GL_EXT_texture_array
+    GL_EXT_texture_compression_dxt1
+    GL_EXT_texture_compression_s3tc
+    GL_EXT_texture_env_add
+    GL_EXT_texture_filter_anisotropic
+    GL_EXT_texture_integer
+    GL_EXT_texture_lod_bias
+    GL_EXT_texture_mirror_clamp
+    GL_EXT_texture_rectangle
+    GL_EXT_texture_sRGB
+    GL_EXT_texture_sRGB_decode
+    GL_EXT_texture_shared_exponent
+    GL_EXT_timer_query
+    GL_EXT_transform_feedback
+    GL_EXT_vertex_array_bgra
+    GL_IBM_rasterpos_clip
+    GL_NV_blend_square
+    GL_NV_conditional_render
+    GL_NV_depth_clamp
+    GL_NV_fog_distance
+    GL_NV_light_max_exponent
+    GL_NV_texgen_reflection
+    GL_NV_texture_barrier
+    GL_SGIS_generate_mipmap
+    GL_SGIS_texture_edge_clamp
+    GL_SGIS_texture_lod
+    GL_SGI_color_matrix
+Number of texture units: 8
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 8192
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 31.0719249249s
