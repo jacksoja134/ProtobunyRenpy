@@ -358,12 +358,12 @@ label choice3_done:
 
                 "Wash Emily":
                     jump choice2_emily1
-
+                    $ menu_flag = True
                 "Play with Emily":
                     jump choice2_emily2
-
+                    $ menu_flag = False
                     jump choice2_emily1done
-
+                    label choice2_emily1_done:
                     scene title_text
 
                     jump choice2_emily2done
@@ -371,7 +371,8 @@ label choice3_done:
 
                     scene title_text
 
-
+                    return
+                    $ renpy.full_restart()
 
 
 
@@ -384,5 +385,3 @@ label choice3_done:
 
 
     # This ends the game.
-
-return

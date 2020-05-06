@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 98: expected menuitem
-    play sound "sounds/pingy.wav"
-    ^
+File "game/script.rpy", line 366: expected ':' not found.
+    label choice2_emily1_done
+                             ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed May  6 16:23:26 2020
+Wed May  6 17:08:50 2020
