@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 26: end of line expected.
-    sound "doopbedoop.mp3" fadeout 1
-                           ^
+File "game/script.rpy", line 98: expected menuitem
+    play sound "sounds/pingy.wav"
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed May  6 13:45:40 2020
+Wed May  6 16:23:26 2020

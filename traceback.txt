@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 206, in script
-    jump choice2_playdone
-ScriptError: could not find label 'choice2_playdone'.
+  File "game/script.rpy", line 363, in script
+    jump choice2_emily2
+ScriptError: could not find label 'choice2_emily2'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 206, in script
-    jump choice2_playdone
-  File "/Applications/renpy-7.3.1-sdk/renpy/ast.py", line 1697, in execute
+  File "game/script.rpy", line 363, in script
+    jump choice2_emily2
+  File "/Users/loryjackson-alcaro/Documents/games/renpy/renpy/ast.py", line 1697, in execute
     rv = renpy.game.script.lookup(target)
-  File "/Applications/renpy-7.3.1-sdk/renpy/script.py", line 898, in lookup
+  File "/Users/loryjackson-alcaro/Documents/games/renpy/renpy/script.py", line 898, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'choice2_playdone'.
+ScriptError: could not find label 'choice2_emily2'.
 
-Darwin-18.6.0-x86_64-i386-64bit
+Darwin-17.7.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 PROTOBUNNY2 1.0
-Wed May  6 15:25:35 2020
+Wed May  6 16:31:48 2020

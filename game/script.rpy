@@ -19,7 +19,7 @@ label start:
 
 
     scene  title_screen
-
+    play music "sounds/doopbedoop.mp3"
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
@@ -30,7 +30,7 @@ label start:
     # These display lines of dialogue.
 
     d "Hey kiddo, I got you this new game."
-    play music "sounds/doopbedoop.mp3"
+
     show girlsprite at right
     e "Oh cool! Never heard of this one before."
     show dad_sprite at left
@@ -46,7 +46,7 @@ label start:
 
 
     e "Alright lets try this sucker out"
-
+    play sound "sounds/frazzle.wav"
     scene bgblue2
     show sadbunny at right:
         yalign 0.5
@@ -86,10 +86,10 @@ label start:
 
         ##### ... the game continues here.
 
-scene bgblue2
-show sadbunny:
-    xalign 1.0
-    yalign 0.5
+        scene bgblue2
+        show sadbunny:
+            xalign 1.0
+            yalign 0.5
 
 
 ##################################################end of second choices
@@ -106,7 +106,7 @@ label choice3_yes:
 
     $ menu_flag = True
     show dad_sprite
-
+    play sound "sounds/lazerzoop.wav"
     d "Emily? How are you enjoying your game?"
     show day1cg2
     e "It's great Dad! Thank you!"
@@ -131,7 +131,7 @@ label choice3_yes:
     "What would you like to do with Bunny today, Emily?"
     scene day1cg2
     e "Whoa, WHAT? did this thing just say my name?"
-
+    play sound "sounds/pingy.wav"
     menu:
 
         "WASH BUNNY":
@@ -144,7 +144,7 @@ label choice3_yes:
 
         $ menu_flag = True
         ##CHANGE THIS IMAGE
-
+        play sound "sounds/hithurt.wav"
         scene bgblue2
         show sadbunny at right
         "SYSTEM ERROR: Bunny does not want to take a bath right now, Emily. Bunny wants to play"
@@ -171,6 +171,7 @@ label choice3_yes:
         e"yeah, okay. it's weird, I feel like i've played this before..."
         scene bgblue2
         show sadbunny
+        play music "sounds/angelic.mp3"
         f "Emily, it's me, Mr. Fiskers! Don't you remember me?"
         scene day1cg2
         e"Huh? What's happening? Mr. Fiskers?..."
@@ -206,7 +207,7 @@ label choice3_yes:
                 jump choice2_playdone
 
         label choice2_keep:
-
+                play music "sounds/doopbedoop.mp3"
                 $ menu_flag = False
                 scene goodendcg2
                 e "But now we can play forever, and ever and ever..."
@@ -280,7 +281,7 @@ menu:
 label choice5_yes:
             jump choice5_done
 label choice5_done:
-
+        play sound "sounds/hithurt.wav"
         scene bgblue2
         show sadbunny at right
 
@@ -310,6 +311,7 @@ label choice5_done:
 
 jump choice3_done
 label choice3_done:
+        play music "sounds/scarymusic.mp3"
         scene bgblue2
         show evilbunny
         f "Emily, it's me, Mr. Fiskers! "
@@ -342,7 +344,7 @@ label choice3_done:
         hide evilbunny
         show badendcg2
 
-
+        play sound "sounds/frazzle.wav"
         e"AAAAAAAAAAAHHHHHH!!"
 
         scene bgblue2
@@ -352,16 +354,15 @@ label choice3_done:
         b"OH COOL! A BUNNY GAME! Thanks Mom!"
         m"Go ahead and put it in, dear."
         "What would you like to do with Emily?"
-        #menu:
+        menu:
 
-        #        "Wash Emily":
-        #            jump choice2_emily1
+                "Wash Emily":
+                    jump choice2_emily1
 
-        #        "Play with Emily":
-        #            jump choice2_emily2
+                "Play with Emily":
+                    jump choice2_emily2
 
-
-
+                    
 
 
 
