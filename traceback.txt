@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 26, in script
+    sound "doopbedoop.mp3"
+Exception: Sayer 'sound' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 26, in script
+    sound "doopbedoop.mp3"
+  File "/Applications/renpy-7.3.1-sdk/renpy/ast.py", line 678, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Applications/renpy-7.3.1-sdk/renpy/ast.py", line 576, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'sound' is not defined.
+
+Darwin-18.6.0-x86_64-i386-64bit
+Ren'Py 7.3.5.606
+PROTOBUNNY2 1.0
+Wed May  6 15:02:39 2020
