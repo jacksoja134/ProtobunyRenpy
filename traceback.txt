@@ -19,4 +19,4 @@ ScriptError: could not find label 'choice2_emily2'.
 Darwin-17.7.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 PROTOBUNNY2 1.0
-Wed May  6 16:31:48 2020
+Wed May  6 16:54:25 2020

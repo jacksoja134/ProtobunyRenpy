@@ -362,14 +362,14 @@ label choice3_done:
                 "Play with Emily":
                     jump choice2_emily2
 
-                    
+                    jump choice2_emily1done
+
+                    scene title_text
+
+                    jump choice2_emily2done
 
 
-
-
-
-
-
+                    scene title_text
 
 
 
